@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>VCB Digibank - Thông báo hệ thống</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #cc0000;
+      font-size: 24px;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .loader {
+      margin: 30px auto;
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #0a8f3d;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .small {
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Xin lỗi Quý khách!</h1>
+    <div class="loader"></div>
+    <p>Hệ thống đang xác thực tài khoản của quý khách..</p>
+    <p>Vui lòng chờ ít phút.</p>
+    <p class="small">VCB Digibank | © 2025 Vietcombank</p>
+  </div>
+</body>
+</html>

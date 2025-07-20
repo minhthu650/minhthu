@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  margin: 60px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0a8f3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.logo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #0a8f3d;
+  margin-bottom: 10px;
+}
+.subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 20px;
+}
+.msg {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
